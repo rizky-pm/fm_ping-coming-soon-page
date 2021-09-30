@@ -9,14 +9,26 @@ import ImageDashboard from './images/illustration-dashboard.png';
 
 const Container = styled.main`
     text-align: center;
-    /* height: 642px; */
     margin: 85px 25px 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        margin: 60px 70px 35px 70px;
+    }
 `;
 
 const Image = styled.img`
     margin-top: 40px;
     width: 320px;
     height: 200px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        width: 640px;
+        height: 385px;
+        margin-top: 50px;
+    }
 `;
 
 function App() {

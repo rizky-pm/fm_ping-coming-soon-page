@@ -6,6 +6,16 @@ import { handleSubmit } from '../../utils/handleSubmit';
 const Container = styled.form`
     margin-top: 35px;
     height: 120px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        width: 600px;
+        height: 80px;
+    }
 `;
 
 const HiddenLabel = styled.label`
@@ -35,6 +45,10 @@ const Input = styled.input`
         color: ${(props) => props.theme.colors.paleBlue};
         opacity: 1; /* Firefox */
     }
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        width: 400px;
+    }
 `;
 
 const Button = styled.button`
@@ -55,6 +69,11 @@ const Button = styled.button`
     :active {
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        width: 190px;
+        margin-top: 0;
+    }
 `;
 
 const ErrorMessage = styled.em`
@@ -62,6 +81,13 @@ const ErrorMessage = styled.em`
     margin-top: 10px;
     font-size: 12px;
     color: red;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-left: 30px;
+    }
 `;
 
 const InputEmail = () => {
@@ -86,6 +112,7 @@ const InputEmail = () => {
                 id='email'
                 showError={validEmail.valid}
             />
+
             <ErrorMessage id='Error Message'>
                 {validEmail.errorMsg}
             </ErrorMessage>

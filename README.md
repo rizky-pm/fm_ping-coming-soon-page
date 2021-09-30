@@ -12,8 +12,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
     -   [Built with](#built-with)
 -   [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -29,12 +27,18 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshot.jpg) -->
+![Mobile](./result_screenshots/mobile.png)
+![Mobile Empty State](./result_screenshots/mobile_empty-state.png)
+![Mobile Invalid State](./result_screenshots/mobile_invalid-state.png)
+
+![Desktop](./result_screenshots/desktop.png)
+![Desktop Empty State](./result_screenshots/desktop_empty-state.png)
+![Desktop Invalid State](./result_screenshots/desktop_invalid-state.png)
 
 ### Links
 
 -   Solution URL: [Github](https://github.com/rizky-pm/fm_ping-coming-soon-page)
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+-   Live Site URL: [Github Pages](https://rizky-pm.github.io/fm_ping-coming-soon-page/)
 
 ## My process
 

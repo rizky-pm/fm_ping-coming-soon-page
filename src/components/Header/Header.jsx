@@ -7,12 +7,21 @@ const Container = styled.div``;
 
 const BrandLogo = styled.img`
     width: 55px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        width: 85px;
+    }
 `;
 
 const MainHeading = styled.p`
     color: ${(props) => props.theme.colors.gray};
     margin-top: 45px;
     font-size: 24px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        margin-top: 45px;
+        font-size: 48px;
+    }
 `;
 
 const Highlighted = styled.span`
@@ -22,6 +31,11 @@ const Highlighted = styled.span`
 
 const SecondaryHeading = styled.p`
     margin-top: 20px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        margin-top: 18px;
+        font-size: 20px;
+    }
 `;
 
 const Header = () => {

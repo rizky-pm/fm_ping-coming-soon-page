@@ -45,12 +45,21 @@ const CopyrightText = styled.p`
     color: ${(props) => props.theme.colors.gray};
     margin-top: 30px;
     font-size: 12px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        margin-top: 18.5px;
+    }
 `;
 
 const Attribution = styled.p`
     color: ${(props) => props.theme.colors.gray};
     width: 60%;
     font-size: 12px;
+
+    @media only screen and (${(props) => props.theme.breakpoints.s}) {
+        width: 100%;
+        margin-top: 10px;
+    }
 `;
 
 const AttributionLink = styled.a`
